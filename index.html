@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Conversor de temperatura</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+        <h2 class="titulo">Conversor de temperatura</h2>
+        <p class="sub-titulo">Descubra a temperatura</p>
+        <p>
+        <label></label>
+        <input id="inputCelsius" type="number" placeholder="Digite o valor em Celsius" 
+        oninput="converterParaFahrenheit(this.value)" 
+        onchange="converterParaFahrenheit(this.value)">
+        </p>
+        <p class="result">Temperatura em Celsius: <span id="valorFahrenheit"></span></p>
+     
+        <p>
+        <label></label>
+        <input id="inputFahrenheit" type="number" placeholder="Digite o valor em Fahrenheit"
+        oninput="converterParaCelsius(this.value)"
+        onchange="converterParaCelsius(this.value)">
+        </p>
+        <p class="result">Temperatura em Fahrenheit: <span id="valorCelsius"></span></p>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
